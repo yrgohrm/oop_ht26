@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASCII Cat</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --fg: #2a241f;
+      --card: #fffdf9;
+      --border: #d9cfc2;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: radial-gradient(circle at top, #fffaf0 0%, var(--bg) 55%, #efe8dc 100%);
+      color: var(--fg);
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .cat-card {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 8px 24px rgba(50, 38, 25, 0.12);
+      max-width: 90vw;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      text-align: center;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+    }
+
+    pre {
+      margin: 0;
+      font-size: clamp(12px, 2.8vw, 18px);
+      line-height: 1.2;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <main class="cat-card">
+    <h1>ASCII Cat</h1>
+    <pre aria-label="ASCII art of a cat">
+ /\_/\\
+( o.o )
+ > ^ <
+    </pre>
+  </main>
+</body>
+</html>
