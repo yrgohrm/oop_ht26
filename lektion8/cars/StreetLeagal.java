@@ -1,0 +1,13 @@
+package cars;
+
+public interface StreetLeagal extends Driveable {
+    void turnOnLights();
+
+    void blinkLeft();
+
+    void blinkRight();
+
+    @Override
+    default void accelerate(int amount) {
+    }
+}
