@@ -21,7 +21,7 @@ public class FileLogger implements Logger {
 
     public FileLogger() {
         try {
-            writer = Files.newBufferedWriter(Path.of("program.log"), StandardOpenOption.APPEND);
+            writer = Files.newBufferedWriter(Path.of("program.log"), StandardOpenOption.APPEND, StandardOpenOption.CREATE);
         }
         catch (IOException ex) {
             throw new UncheckedIOException(ex);
