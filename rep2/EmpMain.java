@@ -61,5 +61,6 @@ public class EmpMain {
 
         Employee emp = new Employee(name, Integer.parseInt(salaryString));
         employees.add(emp);
+
     }
 }
