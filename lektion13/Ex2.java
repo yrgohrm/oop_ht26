@@ -9,5 +9,6 @@ public class Ex2 {
 
         BufferedWriter w = Files.newBufferedWriter(Path.of("yy.txt"));
         w.write("Hello, world!");
+        w.close();
     }
 }
